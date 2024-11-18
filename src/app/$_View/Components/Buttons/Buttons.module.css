@@ -1,0 +1,44 @@
+.ButtonBase {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 150px;
+  height: 35px;
+  background-color: var(--dark-blue);
+  border: none;
+  padding: 0.7em;
+  border-radius: 5px;
+  margin-left: 1em;
+  color: white;
+  transition: 100ms;
+}
+
+.ButtonBase:hover {
+  background-color: var(--primary-blue);
+  cursor: pointer;
+  color: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+/* Delete */
+.ButtonBaseDelete {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 150px;
+  height: 35px;
+  background-color: var(--red-color);
+  border: none;
+  padding: 0.7em;
+  border-radius: 5px;
+  margin-left: 1em;
+  color: white;
+  transition: 100ms;
+}
+
+.ButtonBaseDelete:hover {
+  background-color: var(--LightRed-color);
+  cursor: pointer;
+  color: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}

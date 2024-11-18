@@ -1,0 +1,17 @@
+.BaseInputs {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: auto;
+  padding: 0.5em;
+  background-color: var(--light-blue);
+}
+
+.BaseInputs p {
+  font-size: 0.7rem;
+}
+
+.BaseInputs input {
+  border: none;
+  height: 3em;
+}

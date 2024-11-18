@@ -3,6 +3,8 @@ import { HiInformationCircle } from "react-icons/hi2";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import styles from './Login.module.css'
+import Link from "next/link";
+import { PasswordRule } from "../$_View/Components/PasswordRule/PasswordRule";
 
 
 export default function Home() {
@@ -19,19 +21,19 @@ export default function Home() {
     const [useConfirmCode, setConfirmCode] = useState();
 
     const route = useRouter();
-    useEffect(() => {
-        const fetchAuth = async () => {
-            try {
-                const session = await fetchAuthSession();
-                if (session.tokens) {
-                    route.push("/dashboard");
-                }
-            } catch (error) {
-                console.log(error);
-            }
-        };
-        fetchAuth();
-    }, [route, fetchAuthSession]);
+    // useEffect(() => {
+    //     const fetchAuth = async () => {
+    //         try {
+    //             const session = await fetchAuthSession();
+    //             if (session.tokens) {
+    //                 route.push("/dashboard");
+    //             }
+    //         } catch (error) {
+    //             console.log(error);
+    //         }
+    //     };
+    //     fetchAuth();
+    // }, [route, fetchAuthSession]);
 
     const LoginHandler = async (event) => {
         event.preventDefault();
@@ -74,13 +76,13 @@ export default function Home() {
         <div className={styles.BasePage}>
             <main className={styles.Container}>
                 <div className={styles.FirstLayer}>
-                    <Image
+                    {/* <Image
                         className={styles.logo}
                         src="/N5Hub_Lab_white.png"
                         width={170}
                         height={120}
                         alt="Logotype N5Shield"
-                    />
+                    /> */}
                 </div>
                 <div className={styles.SecondLayer}>
                     <div className={styles.Information}>
@@ -122,7 +124,7 @@ export default function Home() {
                                     Create Account
                                 </p>
                             </div>
-                            {/* <PasswordRule password={usePassword} /> */}
+                            <PasswordRule password={usePassword} />
                         </div>
                     )}
                     {useFormsEvolution == "Create Account" && (

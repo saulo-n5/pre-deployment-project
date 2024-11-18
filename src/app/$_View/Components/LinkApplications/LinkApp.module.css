@@ -1,0 +1,53 @@
+.BaseLinkApps {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 14em;
+  height: 10em;
+  border-radius: 5px;
+  margin: 0.2em;
+  padding: 1em;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  background-color: white;
+  transition: 100ms;
+  color: var(--dark-blue);
+  cursor: pointer;
+  transition: 200ms;
+}
+
+.BaseLinkApps:hover {
+  box-shadow: rgba(134, 134, 134, 0.466) 0px 4px 12px;
+  width: 17em;
+  height: 10em;
+}
+
+.IconLayer {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: space-between;
+}
+.IconLayer p {
+  font-size: 0.6rem;
+  font-style: italic;
+}
+
+.NameLayer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+
+.NameLayer h3 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  /* color: var(--dark-blue); */
+}
+
+.NameLayer p {
+  font-size: 0.55rem;
+  font-style: italic;
+  /* color: var(--dark-gray); */
+}

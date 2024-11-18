@@ -1,0 +1,48 @@
+.BaseNavbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: auto;
+  padding: 1em;
+}
+
+@media (min-width: 1920px) {
+  .BaseNavbar {
+    width: 1920px;
+  }
+}
+
+.Return {
+  font-size: 0.8rem;
+  color: #dbe0e7;
+}
+.Return:hover {
+  color: var(--dark-blue);
+  cursor: pointer;
+}
+
+.Exit {
+  display: flex;
+  color: #dbe0e7;
+  transition: 100ms;
+}
+.Exit:hover {
+  color: var(--dark-blue);
+  cursor: pointer;
+}
+
+.BaseUser {
+  display: flex;
+  align-items: center;
+  width: auto;
+  height: 2em;
+}
+
+.BaseUser h1 {
+  font-size: 0.9rem;
+  margin-right: 1em;
+  font-weight: 400;
+  color: var(--dark-blue);
+}
